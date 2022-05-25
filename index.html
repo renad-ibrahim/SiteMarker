@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Marker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="home">
+        <div class="container">
+            <div class="title">
+                <h1 class=" text-center py-4">Sitemarker </h1><i class="fs-2 px-2 text-danger fa-solid fa-bookmark"></i>
+            </div>
+            <hr>
+            <div class="bookmarker-content m-auto p-5">
+                <h2 class="text-center text-danger">Mark your favorite sites</h2>
+
+                <div class="user-inputs text-center py-4">
+                    <label class="d-block text-center py-3 fw-bolder text-white" for="siteName">Site Name <i class="fa-solid fa-signature"></i></label>
+                    <input class="w-75 m-auto form-control" type="text" placeholder="Site Name" id="siteName" />
+
+                    <label class="d-block text-center py-3 fw-bolder text-white" for="siteUrl">Site URL <i class="fa-solid fa-link"></i></label>
+                    <input class="w-75 m-auto form-control" type="text" placeholder="site URL" id="siteUrl" />
+
+                    <button onclick="create()" class="btn mt-4 bg-danger" type="submit">Save</button>
+                </div>
+
+            </div>
+            <!-- ******************************************* Table to display stored data ***************************************************-->
+            <table class="w-50 my-5 mx-auto table" >
+                <thead>
+                    <th>Site Name</th>
+                    <th>To Visit</th>
+                    <th>To Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+
+
+
+            <hr>
+            <footer>
+                <p class="text-muted fw-bolder">© 2022 Sitemarker.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
